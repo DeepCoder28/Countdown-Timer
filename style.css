@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Red Hat Text", sans-serif;
+  height: 100vh;
+  color: white;
+  background: #211a29;
+  background-image: url("./assets/bg-stars.svg");
+}
+
+.container {
+  font-size: 14px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.container > h1 {
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 6px;
+  font-weight: 500;
+}
+
+.container .clock {
+  display: flex;
+  margin: 3rem 1rem;
+}
+
+.container .clock div {
+  padding: 4rem 3rem;
+  background: linear-gradient(to bottom, hsl(240, 21%, 22%) 50%, hsla(240, 18%, 34%, 0.555) 50%);
+  color: #d54f73;
+  margin: 2rem;
+  border-radius: 10px;
+  font-size: 2.5rem;
+}
+
+.container .clock .days {
+  padding: 5rem;
+}
+
+.container .days h2 {
+  left: 300px;
+}
+
+.container .days h4 {
+  padding-bottom: 2rem;
+}
+
+.container .seconds h2 {
+  right: 310px;
+}
+
+.container .minutes h2 {
+  right: 550px;
+}
+
+.container .clock h2 {
+  position: absolute;
+  top: 285px;
+  font-size: 72px;
+  background: -webkit-linear-gradient(hsla(345, 95%, 68%, 0.822) 60%, hsl(345, 95%, 68%) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .clock h4 {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #757575;
+  position: relative;
+  top: 80px;
+}
